@@ -1,0 +1,207 @@
+{
+  "clean_mb_with_errors": {
+    "datasets": [
+      "10026002"
+    ],
+    "lesson": "V-51(n,g), tabulated in mb; X4Pro converts to barns and logs the error analysis (dy, dysys, dystat)."
+  },
+  "clean_fission": {
+    "datasets": [
+      "10182002"
+    ],
+    "lesson": "Np-237(n,f), already in barns: the simplest clean cross section."
+  },
+  "dysys_larger_than_dy": {
+    "datasets": [
+      "22125007"
+    ],
+    "lesson": "Mo-96(n,p): the systematic component dysys exceeds the dy the ingestion keeps."
+  },
+  "cm_to_lab": {
+    "datasets": [
+      "10914005"
+    ],
+    "lesson": "Li-7(n,el) given in the centre-of-mass frame; X4Pro converts the energy to the laboratory frame."
+  },
+  "s_factor": {
+    "datasets": [
+      "O03160082",
+      "A0089004"
+    ],
+    "lesson": "Charged-particle data tabulated as astrophysical S-factors (b*MeV); X4Pro converts to barns."
+  },
+  "production_Mo100_pxn_Tc99m": {
+    "datasets": [
+      "C2156005",
+      "C2156006",
+      "C2156007"
+    ],
+    "lesson": "Mo-100(p,2n)Tc-99m: the cyclotron route to Tc-99m; the product isomer is only in the REACTION string."
+  },
+  "production_Ra226_Ac225": {
+    "datasets": [
+      "O1236002",
+      "D1077003"
+    ],
+    "lesson": "Ra-226(p,2n)Ac-225: only a handful of points exist."
+  },
+  "production_Zn_Cu67": {
+    "datasets": [
+      "O0738002",
+      "B0049017"
+    ],
+    "lesson": "Zn-70(p,a)Cu-67 and Zn-68(p,2p)Cu-67: Cu-67 production."
+  },
+  "multi_experiment_fission": {
+    "datasets": [
+      "10333006"
+    ],
+    "lesson": "U-235(n,f), flagged as superseded in EXFOR but still in the parquet."
+  },
+  "raw_counts_labelled_barns": {
+    "datasets": [
+      "10001002"
+    ],
+    "lesson": "Al-27(n,g) RAW: original units NO-DIM (counts); X4Pro relabels them B. Values like 25 'barns'."
+  },
+  "arbitrary_units": {
+    "datasets": [
+      "22774002",
+      "23340002"
+    ],
+    "lesson": "H-1 data in arbitrary units relabelled B."
+  },
+  "dimensionless_sum": {
+    "datasets": [
+      "22961005"
+    ],
+    "lesson": "A sum of angular distributions (MT 0) in NO-DIM."
+  },
+  "resonance_widths": {
+    "datasets": [
+      "137420055",
+      "204840045"
+    ],
+    "lesson": "Resonance widths (meV -> eV) sitting in the CrossSection column; resonance energy is the x-axis."
+  },
+  "per_steradian": {
+    "datasets": [
+      "20696008"
+    ],
+    "lesson": "Differential cross section (B/SR) with MT 0."
+  },
+  "thin_target_approximation": {
+    "datasets": [
+      "23656006"
+    ],
+    "lesson": "SF8=TTA: thin-target approximation, an apparent cross section."
+  },
+  "slowing_down_average": {
+    "datasets": [
+      "41233003"
+    ],
+    "lesson": "SF8=SDT: slowing-down-time average, not point-wise."
+  },
+  "approximate_definition": {
+    "datasets": [
+      "D4208002"
+    ],
+    "lesson": "SF8=MSC: approximate definition only."
+  },
+  "raw_with_negative_points": {
+    "datasets": [
+      "12837005",
+      "20374020"
+    ],
+    "lesson": "RAW capture data: 35% of the raw points are <= 0 and are silently deleted at ingestion."
+  },
+  "mt0_sum": {
+    "datasets": [
+      "C1373002"
+    ],
+    "lesson": "No standard MT (MT 0)."
+  },
+  "compound_code_evaluated": {
+    "datasets": [
+      "M0969003"
+    ],
+    "lesson": "Compound code ending EVAL: evaluated values reach the parquet."
+  },
+  "compound_code_derived": {
+    "datasets": [
+      "D0708004"
+    ],
+    "lesson": "Equality code ending DERIV: derived values reach the parquet."
+  },
+  "superseded_in_parquet": {
+    "datasets": [
+      "11975008"
+    ],
+    "lesson": "Marked superseded in SUBENT.SPSDD, still ingested (the filter compares str with int)."
+  },
+  "autocorrection_available": {
+    "datasets": [
+      "D4060017",
+      "D0600002",
+      "O1328002"
+    ],
+    "lesson": "X4Pro computed decay-data correction factors (0.77-1.24) that the ingestion does not apply."
+  },
+  "dropped_natural_target": {
+    "datasets": [
+      "D40560022",
+      "D0412002",
+      "O1310003"
+    ],
+    "lesson": "natNi(d,x)Cu-61, natMo(p,x)Tc-99m, natZn(p,x)Cu-67: natural-element targets (A=0) are dropped."
+  },
+  "dropped_spectrum_average": {
+    "datasets": [
+      "G3005003"
+    ],
+    "lesson": "Bremsstrahlung-spectrum average."
+  },
+  "dropped_evaluated": {
+    "datasets": [
+      "V0045013"
+    ],
+    "lesson": "SF9=EVAL."
+  },
+  "dropped_relative": {
+    "datasets": [
+      "14549012"
+    ],
+    "lesson": "SF8=REL."
+  },
+  "dropped_ratio": {
+    "datasets": [
+      "D0716006"
+    ],
+    "lesson": "Ratio of cross sections."
+  },
+  "dropped_branch_qualifier": {
+    "datasets": [
+      "C2010002",
+      "E1411070"
+    ],
+    "lesson": "SF5 = IND / (CUM): independent and cumulative yields (the isotope-production data type)."
+  },
+  "dropped_not_a_cross_section": {
+    "datasets": [
+      "L0163003"
+    ],
+    "lesson": "SF6 = DA: angular distribution."
+  },
+  "dropped_material_target": {
+    "datasets": [
+      "A0393003"
+    ],
+    "lesson": "Compound target (Cl-cmp)."
+  },
+  "dropped_no_usable_points": {
+    "datasets": [
+      "E2518023"
+    ],
+    "lesson": "Pure by metadata but no usable points."
+  }
+}
