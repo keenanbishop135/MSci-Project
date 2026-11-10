@@ -1,4 +1,4 @@
-A Github repo for my current MSci project - "Machine Learning for Evaluating Nuclear Data for the Production of Mdeical Isotopes"
+A Github repo for my current MSci project - "Machine Learning for Evaluating Nuclear Data for the Production of Medical Isotopes"
 
 I am currently investigating whether certain ML techniques are potentially beneficial in improving quality of available nuclear data that is used in producing certain medical isotopes.
 
